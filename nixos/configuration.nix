@@ -9,15 +9,17 @@
     ./modules/xserver.nix
   ];
 
-  nixpkgs.overlays = [ inputs.polymc.overlay ];
+  # nixpkgs.overlays = [ inputs.polymc.overlay ];
+  
+  nixpkgs.overlays = [ ];
+  
+  networking.hostName = "nixos"; 
 
-  networking.hostName = "nixos"; # Define your hostname.
+  time.timeZone = "Europa/Moscow";
 
-  time.timeZone = "Asia/Tashkent"; # Set your time zone.
-
-  i18n.defaultLocale = "en_US.UTF-8"; # Select internationalisation properties.
+  i18n.defaultLocale = "en_US.UTF-8"; 
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ]; # Enabling flakes
 
-  system.stateVersion = "23.05"; # Don't change it bro
+  system.stateVersion = "24.05"; # I change it bro (-_-)
 }

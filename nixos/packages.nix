@@ -6,26 +6,26 @@
 
   environment.systemPackages = with pkgs; [
     # Desktop apps
-    audacity
-    chromium
+    # audacity
+    google-chrome
     telegram-desktop
     alacritty
-    obs-studio
+    # obs-studio
     rofi
     wofi
-    mpv
-    kdenlive
-    discord
+    # mpv
+    # kdenlive
+    # discord
     gparted
     obsidian
-    zoom-us
+    # zoom-us
     pcmanfm-qt
-    polymc
+    # polymc
 
     # Coding stuff
     gnumake
     gcc
-    nodejs
+    # nodejs
     python
     (python3.withPackages (ps: with ps; [ requests ]))
 
@@ -49,11 +49,11 @@
     cava
     zip
     ntfs3g
-    yt-dlp
+    # yt-dlp
     brightnessctl
     swww
     openssl
-    lazygit
+    # lazygit
     bluez
     bluez-tools
 
@@ -61,14 +61,14 @@
     feh
     imv
     dmenu
-    screenkey
+    # screenkey
     mako
-    gromit-mpx
+    # gromit-mpx
 
     # Xorg stuff
-    #xterm
-    #xclip
-    #xorg.xbacklight
+    # xterm
+    # xclip
+    # xorg.xbacklight
 
     # Wayland stuff
     xwayland
@@ -76,7 +76,7 @@
     cliphist
 
     # WMs and stuff
-    herbstluftwm
+    # herbstluftwm
     hyprland
     seatd
     xdg-desktop-portal-hyprland
@@ -89,16 +89,16 @@
     pamixer
 
     # GPU stuff 
-    amdvlk
-    rocm-opencl-icd
-    glaxnimate
+    # amdvlk
+    # rocm-opencl-icd
+    # glaxnimate
 
     # Screenshotting
-    grim
-    grimblast
-    slurp
+    # grim
+    # grimblast
+    # slurp
     flameshot
-    swappy
+    # swappy
 
     # Other
     home-manager
