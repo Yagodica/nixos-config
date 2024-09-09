@@ -6,7 +6,7 @@
 
     users.ivan = {
       isNormalUser = true;
-      description = "Ampersand";
+      description = "main user";
       extraGroups = [ "networkmanager" "wheel" "input" "libvirtd" ];
       packages = with pkgs; [];
     };

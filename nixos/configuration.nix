@@ -10,9 +10,9 @@
   ];
 
   # nixpkgs.overlays = [ inputs.polymc.overlay ];
-  
+ 
   nixpkgs.overlays = [ ];
-  
+ 
   networking.hostName = "nixos"; 
 
   time.timeZone = "Europa/Moscow";
