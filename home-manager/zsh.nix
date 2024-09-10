@@ -33,5 +33,11 @@
       plugins = [ "git" "sudo" ];
       theme = "agnoster"; # blinks is also really nice
     };
+
+    shellInit = ''
+      if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
+        exec Hyprland
+      fi
+    '';
   };
 }
