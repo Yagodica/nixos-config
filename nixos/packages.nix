@@ -13,7 +13,7 @@
     # obs-studio
     rofi
     wofi
-    # mpv
+    mpv
     # kdenlive
     # discord
     gparted

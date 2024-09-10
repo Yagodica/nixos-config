@@ -3,16 +3,35 @@
     enable = true;
 
     keymaps = {
-      "<leader>ff" = "find_files";
-      "<leader>b" = "buffers";
-      "<leader>fh" = "help_tags";
-      "<leader>gf" = "git_files";
-      "<leader>of" = "oldfiles";
+
+      "<leader>ff" = {
+        action = "<cmd>find_files";
+        options = {
+          desc = "Find project files";
+        };
+      };
+ 
+      "<leader>b" = {
+        action = "<cmd>buffers";
+      };
+
+      "<leader>fh" = {
+        action = "<cmd>help_tags";
+      };
+
+      "<leader>gf" = {
+        action = "<cmd>git_files";
+      };
+
+      "<leader>of" = {
+        action = "<cmd>oldfiles";
+      };
+
       # "<leader>fg" = "live_grep";
       # "<leader>fd" = "diagnostics";
     };
 
-    keymapsSilent = true;
+    # keymapsSilent = true;
 
     settings.defaults = {
       file_ignore_patterns = [
