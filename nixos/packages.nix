@@ -108,6 +108,8 @@
     papirus-nord
 
     # login
+    greetd.greetd
+    greetd.tuigreet
   ];
 
   fonts.packages = with pkgs; [
