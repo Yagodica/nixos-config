@@ -25,7 +25,7 @@
       input = {
         kb_layout = "us,ru";
         kb_variant = "lang";
-        kb_options = "grp:caps_toggle";
+        kb_options = "grp:alt_shift_toggle";
 
         follow_mouse = 1;
 
@@ -45,7 +45,7 @@
 
         layout = "dwindle";
 
-        # no_cursor_warps = false;
+        no_cursor_warps = false;
       };
 
       decoration = {
@@ -85,9 +85,9 @@
         preserve_split = true; # you probably want this
       };
 
-      # master = {
-      #   new_is_master = true;
-      # };
+      master = {
+        new_is_master = true;
+      };
 
       gestures = {
         workspace_swipe = true;
@@ -112,7 +112,7 @@
 
       exec-once = [
         "swww init"
-        "swww img ~/Downloads/godzila-ebanovich.gif"
+        "swww img ~/Downloads/godzila-ebanovich.png"
         "waybar"
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"
@@ -191,10 +191,10 @@
         ", XF86MonBrightnessUp, exec, brightnessctl set +5% "
 
         # Configuration files
-        ''$mainMod SHIFT, N, exec, alacritty -e sh -c "rb"''
-        ''$mainMod SHIFT, C, exec, alacritty -e sh -c "conf"''
-        ''$mainMod SHIFT, H, exec, alacritty -e sh -c "nvim ~/nixos-config/home-manager/modules/wms/hyprland.nix"''
-        ''$mainMod SHIFT, W, exec, alacritty -e sh -c "nvim ~/nixos-config/home-manager/modules/wms/waybar.nix''
+        # ''$mainMod SHIFT, N, exec, alacritty -e sh -c "rb"''
+        # ''$mainMod SHIFT, C, exec, alacritty -e sh -c "conf"''
+        # ''$mainMod SHIFT, H, exec, alacritty -e sh -c "nvim ~/nixos-config/home-manager/modules/wms/hyprland.nix"''
+        # ''$mainMod SHIFT, W, exec, alacritty -e sh -c "nvim ~/nixos-config/home-manager/modules/wms/waybar.nix''
         '', Print, exec, grim -g "$(slurp)" - | swappy -f -''
 
         # Waybar
@@ -202,7 +202,7 @@
         "$mainMod, W, exec, pkill -SIGUSR2 waybar"
 
         # Disable all effects
-        "$mainMod Shift, G, exec, ~/.config/hypr/gamemode.sh "
+        # "$mainMod Shift, G, exec, ~/.config/hypr/gamemode.sh "
       ];
 
       # Move/resize windows with mainMod + LMB/RMB and dragging

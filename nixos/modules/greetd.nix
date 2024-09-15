@@ -1,16 +1,10 @@
+{ pkgs, ... }:
 {
-  pkgs,
-  inputs,
-  ...
-}: let
-  tuigreet = "${pkgs.greetd.tuigreet}/bin/tuigreet";
-  hyprland-session = "${inputs.hyprland.packages.${pkgs.system}.hyprland}/share/wayland-sessions";
-in {
   services.greetd = {
     enable = true;
     settings = {
       default_session = {
-        command = "${tuigreet} --time --remember --remember-session --sessions ${hyprland-session}";
+        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd hyprland";
         user = "ivan";
       };
     };
@@ -20,8 +14,7 @@ in {
     Type = "idle";
     StandardInput = "tty";
     StandardOutput = "tty";
-    StandardError = "journal"; # Without this errors will spam on screen
-    # Without these bootlogs will spam on screen
+    StandardError = "journal"; 
     TTYReset = true;
     TTYVHangup = true;
     TTYVTDisallocate = true;
