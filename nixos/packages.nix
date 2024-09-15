@@ -106,6 +106,8 @@
     libsForQt5.qtstyleplugin-kvantum
     libsForQt5.qt5ct
     papirus-nord
+
+    # login
   ];
 
   fonts.packages = with pkgs; [

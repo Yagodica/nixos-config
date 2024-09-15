@@ -45,7 +45,7 @@
 
         layout = "dwindle";
 
-        no_cursor_warps = false;
+        # no_cursor_warps = false;
       };
 
       decoration = {
@@ -85,9 +85,9 @@
         preserve_split = true; # you probably want this
       };
 
-      master = {
-        new_is_master = true;
-      };
+      # master = {
+      #   new_is_master = true;
+      # };
 
       gestures = {
         workspace_swipe = true;
