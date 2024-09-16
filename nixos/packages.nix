@@ -19,7 +19,7 @@
     gparted
     obsidian
     # zoom-us
-    pcmanfm-qt
+    # pcmanfm-qt
     # polymc
 
     # Coding stuff
@@ -61,8 +61,10 @@
     feh
     imv
     dmenu
+    mpvpaper
     # screenkey
     mako
+    hyprpaper
     # gromit-mpx
 
     # Xorg stuff
@@ -94,11 +96,11 @@
     # glaxnimate
 
     # Screenshotting
-    # grim
-    # grimblast
-    # slurp
-    flameshot
-    # swappy
+    grim
+    grimblast
+    slurp
+    # flameshot
+    swappy
 
     # Other
     home-manager

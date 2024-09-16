@@ -1,4 +1,6 @@
-{
+let 
+  wofi_confs = "$HOME/.config/wofi";
+in {
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland.enable = true;
@@ -12,7 +14,7 @@
         "XDG_CURRENT_DESKTOP,Hyprland"
         "XDG_SESSION_TYPE,wayland"
         "XDG_SESSION_DESKTOP,Hyprland"
-        "XCURSOR_SIZE,36"
+        "XCURSOR_SIZE,18"
         "QT_QPA_PLATFORM,wayland"
         "XDG_SCREENSHOTS_DIR,~/screens"
       ];
@@ -45,7 +47,7 @@
 
         layout = "dwindle";
 
-        no_cursor_warps = false;
+        # no_cursor_warps = false;
       };
 
       decoration = {
@@ -86,7 +88,7 @@
       };
 
       master = {
-        new_is_master = true;
+        # new_is_master = true;
       };
 
       gestures = {
@@ -119,14 +121,14 @@
       ];
 
       bind = [
-        "$mainMod, V, exec, cliphist list | wofi --dmenu | cliphist decode | wl-copy"
+        "$mainMod, V, exec, cliphist list | wofi --dmenu --conf ${wofi_confs} | cliphist decode | wl-copy"
 
         "$mainMod, Return, exec, alacritty"
         "$mainMod, Q, killactive,"
         "$mainMod, M, exit,"
         "$mainMod, E, exec, dolphin"
         "$mainMod, F, togglefloating,"
-        "$mainMod, D, exec, wofi --show drun"
+        "$mainMod, D, exec, wofi --show drun --conf ${wofi_confs}"
         "$mainMod, P, pseudo, # dwindle"
         "$mainMod, J, togglesplit, # dwindle"
 
