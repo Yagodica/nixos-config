@@ -33,9 +33,9 @@
     };
 
     "clock" = {
-        timezone = "Europa/Moscow";
+        timezone = "Europe/Moscow";
         tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
-        format = "{:%a; %d %b, %I:%M %p}";
+        format = "{:%a; %d %b, %H:%M %p}";
     };
 
     "custom/weather" = {

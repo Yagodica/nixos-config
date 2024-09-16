@@ -45,7 +45,7 @@
     lux
     mediainfo
     ranger
-    zram-generator
+    # zram-generator
     cava
     zip
     ntfs3g
