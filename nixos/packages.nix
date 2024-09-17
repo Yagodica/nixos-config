@@ -30,6 +30,7 @@
     (python3.withPackages (ps: with ps; [ requests ]))
 
     # CLI utils
+    efibootmgr
     neofetch
     file
     tree
