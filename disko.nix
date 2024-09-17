@@ -2,14 +2,14 @@
   disko.devices = {
     disk = {
       my-disk = {
-        device = "/dev/sdb";
+        device = "/dev/nvme0n1";
         type = "disk";
         content = {
           type = "gpt";
           partitions = {
             ESP = {
               type = "EF00";
-              size = "256M";
+              size = "512M";
               content = {
                type = "filesystem";
                 format = "vfat";
@@ -18,7 +18,7 @@
             };
 
             swap = {
-              size = "8G";
+              size = "12G";
               content = {
                 type = "swap";
                 resumeDevice = true;
@@ -26,7 +26,7 @@
             };
 
             root = {
-              size = "100%";
+              size = "100G";
               content = {
                 type = "filesystem";
                 format = "ext4";
