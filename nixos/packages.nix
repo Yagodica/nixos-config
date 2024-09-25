@@ -27,6 +27,7 @@
     gcc
     # nodejs
     python
+    jdk11
     (python3.withPackages (ps: with ps; [ requests ]))
 
     # CLI utils
@@ -127,8 +128,6 @@
 
     # mysql
     mysql-workbench
-    
-
   ];
 
   fonts.packages = with pkgs; [
@@ -142,3 +141,4 @@
     (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
   ];
 }
+
