@@ -114,7 +114,7 @@ in {
 
       exec-once = [
         "swww init"
-        "swww img ~/Downloads/godzila-ebanovich.png"
+        "swww img ~/Downloads/anime_wp.jpg"
         "waybar"
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"

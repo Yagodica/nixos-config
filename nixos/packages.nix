@@ -68,6 +68,8 @@
     hyprpaper
     # gromit-mpx
 
+    nautilus
+
     # Xorg stuff
     # xterm
     # xclip
@@ -113,6 +115,13 @@
     # login
     greetd.greetd
     greetd.tuigreet
+
+    # wine
+    wineWowPackages.stable
+    wineWowPackages.staging
+    winetricks
+    wineWowPackages.waylandFull
+
   ];
 
   fonts.packages = with pkgs; [
