@@ -11,7 +11,11 @@
 
   # nixpkgs.overlays = [ inputs.polymc.overlay ];
  
-  nixpkgs.overlays = [ ];
+  services.gnome.gnome-keyring.enable = true;
+    
+  nixpkgs.overlays = [ 
+    (import ./overlays/mysql-workbench-overlay.nix)
+  ];
  
   networking.hostName = "nixos"; 
 

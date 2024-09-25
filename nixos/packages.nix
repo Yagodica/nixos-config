@@ -46,6 +46,7 @@
     lux
     mediainfo
     ranger
+    libsecret
     # zram-generator
     cava
     zip
@@ -67,7 +68,9 @@
     mako
     hyprpaper
     # gromit-mpx
-
+    gnome.gnome-keyring
+    gnome.libgnome-keyring
+    gnome.seahorse
     nautilus
 
     # Xorg stuff
@@ -124,6 +127,8 @@
 
     # mysql
     mysql-workbench
+    
+
   ];
 
   fonts.packages = with pkgs; [
