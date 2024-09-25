@@ -122,6 +122,8 @@
     winetricks
     wineWowPackages.waylandFull
 
+    # mysql
+    mysql-workbench
   ];
 
   fonts.packages = with pkgs; [

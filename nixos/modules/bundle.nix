@@ -13,5 +13,6 @@
     ./bluetooth.nix
     ./nixvim/nixvim.nix
     ./greetd.nix
+    ./mysql.nix
   ];
 }

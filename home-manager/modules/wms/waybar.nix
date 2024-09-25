@@ -98,18 +98,18 @@
         min-length = 7;
     };
 
-    battery = {
-        states = {
-            warning = 30;
-            critical = 15;
-        };
-        format = "{capacity}% {icon}";
-        format-charging = "{capacity}% ";
-        format-plugged = "{capacity}% ";
-        format-alt = "{time} {icon}";
-        format-icons = ["" "" "" "" "" "" "" "" "" ""];
-	on-update = "$HOME/.config/waybar/scripts/check_battery.sh";
-    };
+ #    battery = {
+ #        states = {
+ #            warning = 30;
+ #            critical = 15;
+ #        };
+ #        format = "{capacity}% {icon}";
+ #        format-charging = "{capacity}% ";
+ #        format-plugged = "{capacity}% ";
+ #        format-alt = "{time} {icon}";
+ #        format-icons = ["" "" "" "" "" "" "" "" "" ""];
+	# on-update = "$HOME/.config/waybar/scripts/check_battery.sh";
+ #    };
 
     tray = {
         icon-size = 16;
@@ -222,15 +222,7 @@ window#waybar.hidden {
 #clock {
     padding-left: 16px;
     padding-right: 16px;
-    border-radius: 10px 0px 0px 10px;
-    transition: none;
-    color: #ffffff;
-    background: #383c4a;
-}
-
-#custom-weather {
-    padding-right: 16px;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 10px 10px 10px 10px;
     transition: none;
     color: #ffffff;
     background: #383c4a;
