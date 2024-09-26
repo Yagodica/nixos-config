@@ -1,11 +1,4 @@
-{ inputs, outputs, pkgs ? import <nixpkgs> {}, ...}: 
-
-let
-  customPkgs = import (builtins.fetchTarball {
-    url = "https://download.oracle.com/otn_software/java/sqldeveloper/sqldeveloper-23.1.1.345.2114-no-jre.zip";
-    sha256 = "1girm7ksafrsvk0fpcswyqiwadpf4fzs5w5ff2h6v7qb4v573jji";
-  }) { inherit pkgs; };
-in 
+{ inputs, outputs, ...}: 
 {
   imports = [
     ./hardware-configuration.nix
@@ -25,10 +18,6 @@ in
 
   ];
 
-  environment.systemPackages = with customPkgs; [
-    sqldeveloper 
-  ];
- 
   networking.hostName = "nixos"; 
 
   time.timeZone = "Europe/Moscow";

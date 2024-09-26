@@ -73,7 +73,7 @@
     gnome.libgnome-keyring
     gnome.seahorse
     nautilus
-
+    onlyoffice-bin
     # Xorg stuff
     # xterm
     # xclip
