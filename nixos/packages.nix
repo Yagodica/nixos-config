@@ -28,6 +28,8 @@
     # nodejs
     python
     jdk11
+    python312Packages.pip
+    python312Packages.virtualenv
     (python3.withPackages (ps: with ps; [ requests ]))
 
     # CLI utils
