@@ -7,7 +7,7 @@
     users.ivan = {
       isNormalUser = true;
       description = "main user";
-      extraGroups = [ "networkmanager" "wheel" "input" "libvirtd" ];
+      extraGroups = [ "docker" "networkmanager" "wheel" "input" "libvirtd" ];
       packages = with pkgs; [];
     };
   };
