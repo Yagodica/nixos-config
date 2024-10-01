@@ -40,6 +40,7 @@
       enable = true;
       servers = {
         nil-ls.enable = true;
+        pyright.enable = true;
       };
     };
   };
