@@ -76,6 +76,8 @@
     gnome.seahorse
     nautilus
     onlyoffice-bin
+    vscode
+
     # Xorg stuff
     # xterm
     # xclip
