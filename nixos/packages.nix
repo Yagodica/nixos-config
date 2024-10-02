@@ -33,6 +33,7 @@
     (python3.withPackages (ps: with ps; [ requests ]))
 
     # CLI utils
+    SDL2 
     efibootmgr
     neofetch
     file

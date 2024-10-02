@@ -30,7 +30,7 @@
 
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" "sudo" ];
+      plugins = [ "git" "sudo" "virtualenv" ];
       theme = "agnoster"; # blinks is also really nice
     };
 
