@@ -105,6 +105,7 @@ in {
         enable_swallow = true;
         render_ahead_of_time = false;
         disable_hyprland_logo = true;
+        swallow_regex = "^(google-chrome-stable)$";
       };
 
       windowrule = [
