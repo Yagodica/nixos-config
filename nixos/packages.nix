@@ -78,6 +78,7 @@
     nautilus
     onlyoffice-bin
     vscode
+    discord
 
     # Xorg stuff
     # xterm
