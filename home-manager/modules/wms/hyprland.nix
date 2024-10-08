@@ -113,6 +113,11 @@ in {
         "float, ^(mpv)$"
       ];
 
+      windowrulev2 = [
+        "float, title:(.*)(- Accounts)$"
+        "size 300 300, title:(.*)(- Accounts)$"
+      ];
+
       exec-once = [
         "swww init"
         "swww img ~/Downloads/anime_wp.jpg"
