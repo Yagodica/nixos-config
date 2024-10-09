@@ -52,6 +52,7 @@
     mediainfo
     ranger
     libsecret
+    udiskie
     # zram-generator
     cava
     zip

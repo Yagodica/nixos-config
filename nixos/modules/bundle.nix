@@ -15,5 +15,6 @@
     ./greetd.nix
     ./mysql.nix
     ./docker.nix
+    ./udisks.nix
   ];
 }
