@@ -8,6 +8,7 @@
     # Desktop apps
     # audacity
     google-chrome
+    tor-browser
     telegram-desktop
     alacritty
     # obs-studio
