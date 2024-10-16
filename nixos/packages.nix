@@ -34,6 +34,7 @@
     (python3.withPackages (ps: with ps; [ requests ]))
 
     # CLI utils
+    cron
     SDL2 
     efibootmgr
     neofetch
