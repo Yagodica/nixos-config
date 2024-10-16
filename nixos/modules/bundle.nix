@@ -16,5 +16,6 @@
     ./mysql.nix
     ./docker.nix
     ./udisks.nix
+    ./cron.nix
   ];
 }
