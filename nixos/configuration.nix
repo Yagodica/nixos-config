@@ -18,6 +18,8 @@
 
   ];
 
+  programs.steam.enable = true;
+    
   networking.hostName = "nixos"; 
 
   time.timeZone = "Europe/Moscow";
