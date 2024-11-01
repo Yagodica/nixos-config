@@ -84,6 +84,10 @@
     vscode
     discord
 
+    # steam
+    steam
+
+    qbittorrent
     # Xorg stuff
     # xterm
     # xclip
