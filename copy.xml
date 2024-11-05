@@ -8,45 +8,6 @@
   -->
 
   <language name="SCLEX_MYSQL">
-    <!-- This is the base language setting. It's usually not directly used, but provides values shared by
-         more specialized MySQL versions. -->
-    
-    <!-- Lexer properties -->
-    <property name="fold" value="1" />
-    <property name="fold.compact" value="0" />
-    <property name="fold.comment" value="1" />
-
-    <!-- Editor settings -->
-    <setting name="usetabs" value="1" />
-    <setting name="tabwidth" value="4" />
-    <setting name="indentation" value="4" />
-
-    <!-- Keep in mind to use the same list names as defined in the lexers (e.g. LexMySQL.cpp). -->
-    <keywords name="Major Keywords">
-      <!-- Keywords that can start a statement. No longer used. -->
-    </keywords>
-
-    <keywords name="Keywords">
-      <!-- Normal keywords. No longer kept here but come from the keywords_list.h file provided by the server itself. -->
-    </keywords>
-
-    <keywords name="Procedure keywords">
-      begin end comment
-    </keywords>
-
-    <keywords name="User Keywords 1">
-      delimiter
-    </keywords>
-
-    <!-- These two lists are not used for syntax highlighting but assemble keywords from the other lists that serve a special purpose. -->
-    <keywords name="User Keywords 2"> <!-- Keywords that are allowed at the start of an expression. -->
-      binary case cast convert exists interval match not row
-    </keywords>
-
-    <keywords name="User Keywords 3"> <!-- Like user 2 but those that can appear between two expressions. -->
-      all and any as between escape false in is like or regexp sounds true unknown xor
-    </keywords>
-
     <style id="32" fore-color-light="#f8f8f2" back-color-light="#282a36" fore-color-dark="#f8f8f2" back-color-dark="#282a36" bold="No" />   <!-- STYLE_DEFAULT       !BACKGROUND!   -->
     <style id="33" fore-color-light="#f8f8f2" back-color-light="#282a36" fore-color-dark="#f8f8f2" back-color-dark="#282a36" bold="No" />   <!-- STYLE_LINENUMBER                   -->
     <style id= "0" fore-color-light="#f8f8f2" back-color-light="#282a36" fore-color-dark="#f8f8f2" back-color-dark="#282a36" bold="No" />   <!-- SCE_MYSQL_DEFAULT                  -->
@@ -95,8 +56,7 @@
     <style id="83" fore-color-light="#529B2F" back-color-light="#49483E" fore-color-dark="#529B2F" back-color-dark="#49483E" bold="No" />   <!-- SCE_MYSQL_USER2                    -->
     <style id="84" fore-color-light="#529B2F" back-color-light="#49483E" fore-color-dark="#529B2F" back-color-dark="#49483E" bold="No" />   <!-- SCE_MYSQL_USER3                    -->
     <style id="85" fore-color-light="#8be9fd" back-color-light="#888888" fore-color-dark="#8be9fd" back-color-dark="#888888" bold="No" />   <!-- SCE_MYSQL_HIDDENCOMMAND            -->
-    <style id="86" fore-color-light="#AAAAAA" back-color-light="#888888" fore-color-dark="#AAAAAA" back-color-dark="#888888" bold="No" />   <!-- SCE_MYSQL_PLACEHOLDER              -->  
-
+    <style id="86" fore-color-light="#AAAAAA" back-color-light="#888888" fore-color-dark="#AAAAAA" back-color-dark="#888888" bold="No" />   <!-- SCE_MYSQL_PLACEHOLDER              -->    
   </language>
 
   <language name="SCLEX_MYSQL_56">
