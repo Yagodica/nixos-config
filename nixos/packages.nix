@@ -83,6 +83,7 @@
     onlyoffice-bin
     vscode
     discord
+    dbeaver-bin
 
     # steam
     steam
